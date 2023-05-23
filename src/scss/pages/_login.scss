@@ -1,0 +1,119 @@
+#main-content {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 2rem);
+    height: 14rem;
+    border-radius: 1rem;
+    background-image: url('/public/images/login-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+
+    @include media-breakpoint-up(lg) {
+      height: 26.5rem;
+    }
+  }
+
+  #main-header {
+    position: relative;
+    z-index: 10;
+    margin-top: 3.5rem;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 7.5rem;
+    }
+
+    p {
+      @include media-breakpoint-up(lg) {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .card-auth {
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 2rem);
+    margin-top: 2.5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      width: 28rem;
+      padding: 3rem;
+    }
+
+    &-header {
+      &-title {
+        font-size: 1.875rem;
+        font-weight: $font-weight-bold;
+      }
+
+      &-subtitle {
+        color: $secondary;
+        font-size: 0.875rem;
+      }
+    }
+
+    &-content {
+      .form-label {
+        font-size: 0.875rem;
+      }
+    }
+
+    &-footer {
+      text-align: center;
+      font-size: 0.875rem;
+      margin-top: 1.5rem;
+
+      a {
+        color: $primary;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#main-footer {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    a {
+      color: $secondary;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    &-social-media {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .copy {
+    color: $secondary;
+    text-align: center;
+    margin: 2rem 0;
+  }
+}

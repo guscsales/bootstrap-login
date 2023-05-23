@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/node_modules/remixicon/fonts/remixicon.css" />
+    <link rel="stylesheet" href="/public/css/globals.css" />
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <main id="main-content">
+      <header id="main-header" class="container-fluid container-lg">
+        <h1 class="display-6 fw-bold text-white mb-1">Welcome back!</h1>
+        <p class="text-white px-3">
+          Use these awesome forms to login or create new account in your project
+          for free.
+        </p>
+      </header>
+
+      <section class="container-fluid container">
+        <div class="card border-0 card-auth">
+          <header class="card-auth-header">
+            <h3 class="card-auth-header-title mb-1">Welcome back</h3>
+            <span class="card-auth-header-subtitle"
+              >Enter your email and password to sign in</span
+            >
+          </header>
+
+          <form
+            class="card-auth-content d-grid gap-3 mt-4 needs-validation"
+            novalidate
+            action="#"
+          >
+            <div>
+              <label for="email" class="form-label mb-1 text-secondary"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="password" class="form-label mb-1 text-secondary"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control form-control-lg"
+                id="password"
+                placeholder="********"
+                required
+              />
+            </div>
+
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="remember-me"
+              />
+              <label class="form-check-label" for="remember-me"
+                >Remember me</label
+              >
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+
+          <footer class="card-auth-footer">
+            Don't have an account? <a href="#">Sign up</a>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer" class="container-fluid container-lg">
+      <nav class="nav">
+        <a href="#">Company</a>
+        <a href="#">About Us</a>
+        <a href="#">Team</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+      </nav>
+
+      <nav class="nav nav-social-media">
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-youtube-fill"></i></a>
+      </nav>
+
+      <div class="copy">Copyright © 2022 Material by Creative Tim.</div>
+    </footer>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/scripts/validator.js"></script>
+  </body>
+</html>

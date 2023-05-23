@@ -1,0 +1,13 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import 'variables';
+@import 'bootstrap';
+
+@import './pages/login';
+
+html {
+  font-size: $font-size-html-base;
+}
+
+body {
+  background-color: $gray-100;
+}
